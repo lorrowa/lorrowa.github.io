@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="main.css">
+<script>
+function adjustIframes()
+{
+  $('iframe').each(function(){
+    var
+    $this       = $(this),
+    proportion  = $this.data( 'proportion' ),
+    w           = $this.attr('width'),
+    actual_w    = $this.width();
+    
+    if ( ! proportion )
+    {
+        proportion = $this.attr('height') / w;
+        $this.data( 'proportion', proportion );
+    }
+  
+    if ( actual_w != w )
+    {
+        $this.css( 'height', Math.round( actual_w * proportion ) + 'px' );
+    }
+  });
+}
+$(window).on('resize load',adjustIframes);
+        </script>
+        </head>
+<body>
+
+<h1>Hobart Hurricanes</h1>
+    <p class="double"> The unofficial website of the <strong>Hobart Hurricanes</strong> Cricket Club. The Hobart Hurricanes are the Twenty Twenty Big Bash team representing Hobart on a <strong>domestic</strong> level.</p>
+<h2>Hurricanes Logo</h2>
+<img src="hh.png" alt=" Hobart Logo" style="width:200px;height:200px;">
+<p><strong>Fanbase</strong> The Hurricanes Fanbase are called <em><b>The Purple Army.</b></em><br> <strong> Home Ground</strong> The Home Ground of the Hobart Hurricanes is <em><b>Blundstone Arena </b></em>. It has a capacity of 19,500. It is located on Hobart's Eastern Shore in the suburb of Bellerive.<img src="Bellerive%20new.png" alt=" Bellerive Oval" style="width:400px;height:250px;"> The stadium contains a hill for sitting on as well as four main areas-</p>
+    <p>   
+<ul>
+  <li>The David Boon Stand</li>
+  <li> The Members Pavilion</li>
+  <li> The Ricky Ponting Stand</li>
+    <li>The North-East Stuart Spencer Stand</li>
+</ul> 
+   </p> 
+    
+    <p><strong>Players</strong> Hobart Hurricanes house an all-star line up including the likes of </p>
+    <iframe frameborder="0" height="426" src="http://www.hobarthurricanes.com.au/players" width="510"></iframe>
+    <p><strong>History</strong> the Hurricanes have been part of The Australian Domestic twenty twenty league since it first started. The Hurricanes have never won but have been close. <br> <strong>Representation</strong> the teams that finish top two each season in the Big Bash League enter the Champions league twenty twenty league which puts the clubs on an international stage. They play against the best twenty twenty teams from other leagues around the world. <br> <strong>Fixtures</strong></p>
+   <p> <ul>
+  <li>FRIDAY 23 DEC 2016 6:10 PM
+Versus Sixers
+SCG, Sydney</li>
+  <li> MONDAY 26 DEC 2016 7:10 PM
+Versus Stars Blundstone Arena, Hobart
+ </li>
+  <li> FRIDAY 30 DEC 2016 6:10 PM
+Versus Heat
+Gabba, Brisbane</li>
+    <li>MONDAY 02 JAN 2017 7:10 PM
+Versus Strikers
+Blundstone Arena, Hobart</li>
+    <li>FRIDAY 06 JAN 2017 6:40 PM
+Versus Strikers
+Adelaide Oval, Adelaide</li>
+    <li>SUNDAY 08 JAN 2017 7:10 PM
+Versus Thunder
+Blundstone Arena, Hobart</li>
+    <li>THURSDAY 12 JAN 2017 7:40 PM
+Versus Renegades
+Etihad Stadium, Melbourne</li>
+    <li>SATURDAY 21 JAN 2017 4:20 PM
+Versus Scorchers
+Blundstone Arena, Hobart</li>
+</ul> 
+    </p> 
+<p><strong>Sponsors</strong> The sponsors of the Hobart Hurricanes include <br> Chemist Warehouse <img src="folder4photos/photo1.png" alt="Chemist Logo" width="25"> <br>
+</p>
+</body>
+</html>
