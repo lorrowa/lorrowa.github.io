@@ -3,30 +3,6 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="main.css">
-<script>
-function adjustIframes()
-{
-  $('iframe').each(function(){
-    var
-    $this       = $(this),
-    proportion  = $this.data( 'proportion' ),
-    w           = $this.attr('width'),
-    actual_w    = $this.width();
-    
-    if ( ! proportion )
-    {
-        proportion = $this.attr('height') / w;
-        $this.data( 'proportion', proportion );
-    }
-  
-    if ( actual_w != w )
-    {
-        $this.css( 'height', Math.round( actual_w * proportion ) + 'px' );
-    }
-  });
-}
-$(window).on('resize load',adjustIframes);
-        </script>
         </head>
 <body>
 
@@ -45,7 +21,8 @@ $(window).on('resize load',adjustIframes);
    </p> 
     
     <p><strong>Players</strong> Hobart Hurricanes house an all-star line up including the likes of </p>
-    <iframe frameborder="0" height="426" src="http://www.hobarthurricanes.com.au/players" width="510"></iframe>
+    <img src="folder4photos/players%20-1.png">
+    <img src="folder4photos/players%201.png">
     <p><strong>History</strong> the Hurricanes have been part of The Australian Domestic twenty twenty league since it first started. The Hurricanes have never won but have been close. <br> <strong>Representation</strong> the teams that finish top two each season in the Big Bash League enter the Champions league twenty twenty league which puts the clubs on an international stage. They play against the best twenty twenty teams from other leagues around the world. <br> <strong>Fixtures</strong></p>
    <p> <ul>
   <li>FRIDAY 23 DEC 2016 6:10 PM
